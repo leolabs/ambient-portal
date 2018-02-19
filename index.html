@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=820, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+        <div id="topBar">
+            <div style="width: 30%; box-sizing: border-box; float: left">
+                <a href="http://thinkwithportals.com" target="_blank" title="Made with sounds from the Portal 2 editor"><img src="img/portal_logo.png" alt="Sounds from Portal 2" /></a>
+            </div>
+
+            <div style="width: 52%; box-sizing: border-box; float: left">
+                <h2 id="aboutWindowBtn" style="text-align: center; line-height: 50px; cursor: pointer">Portal 2 Ambient</h2>
+            </div>
+
+            <div style="width: 18%; box-sizing: border-box; float: left">
+                <a href="http://leolabs.org" target="_blank" title="Made by leolabs.org"><img src="img/leolabs_logo.png" alt="Made by leolabs.org" /></a>
+            </div>
+        </div>
+
+        <div id="welcomeWindow">
+            <h2>Portal 2 Ambient</h2>
+
+            <div class="progress">
+                <div id="initProgress" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                </div>
+            </div>
+        </div>
+
+        <div id="aboutWindow">
+            <span id="hideAboutBtn">&#10006;</span>
+            <h2>Portal 2 Ambient</h2>
+            <p>After using Portal 2's in-game level editor for a while I really started to like the background track. In this web app, I wanted to bring these sounds to the web.</p>
+            <p>I used the original blips and background sounds from Portal 2, so this web app will sound mostly identical.</p>
+            <p style="margin-bottom: 0">If you have questions or ideas, please contact me <a href="https://twitter.com/leolabs_org">on Twitter</a>.</p>
+        </div>
+
+        <div id="bottomBar">
+            <div style="width: 33.3333%; box-sizing: border-box; padding-right: 32px; float: left">
+                <p>Volume: <span id="volumeDisplay">80 %</span></p>
+                <input class="block" type="range" id="volumeSlider" step="1" min="0" value="80" max="100">
+            </div>
+            <div style="width: 33.3333%; box-sizing: border-box; float: left">
+                <p>Blip delay: <span id="blipDisplay">2-12 sec.</span></p>
+                <input class="block" type="range" id="blipSlider" step="1" value="10" min="1" max="30">
+            </div>
+            <div style="width: 33.3333%; box-sizing: border-box; padding-left: 32px; float: left">
+                <p>Background volume: <span id="bgDisplay">40 %</span></p>
+                <input class="block" type="range" id="bgSlider" step="1" min="0" value="40" max="100">
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/buzz.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
